@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using Telerik.Maui.Controls;
+using Telerik.Maui.Controls.Compatibility;
 
 namespace Test
 {
@@ -8,6 +10,7 @@ namespace Test
         {
             var builder = MauiApp.CreateBuilder();
             builder
+                .UseTelerik()
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
